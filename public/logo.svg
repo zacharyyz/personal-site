@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="18px" viewBox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Logo" transform="translate(-11.000000, -12.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="Group" transform="translate(21.500000, 21.000000) scale(-1, 1) translate(-21.500000, -21.000000) translate(12.000000, 13.000000)">
+                <polyline id="Path-Copy" points="0 0 13.9989925 0 0 14.5736049"></polyline>
+                <polyline id="Path" transform="translate(11.999496, 8.286802) scale(-1, -1) translate(-11.999496, -8.286802) " points="5 1 18.9989925 1 5 15.5736049"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

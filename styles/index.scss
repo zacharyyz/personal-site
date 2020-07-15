@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+$primaryFont: 'Poppins', sans-serif;
+$secondaryFont: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$color-bg: #121212;
+$color-loading-bg: #0a0a0a;
+$color-light: #ffffff;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: $color-bg;
+}
+
+body {
+  background: url("/hero.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  position: fixed;
+  font-family: $primaryFont;
+  line-height: 80px;
+  margin-left: 3em;
+  color: $color-light;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.logo > * {
+  position: relative;
+  top: 1px;
+  z-index: 1;
+  height: 16px;
+  width: 16px;
+}
+
+.contact {
+  position: fixed;
+  color: rgb(124, 124, 124);
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: $primaryFont;
+  text-transform: uppercase;
+  right: 100px;
+  line-height: 80px;
+  z-index: 1;
+}
+
+.menu {
+  position: fixed;
+  color: $color-light;
+  right: 2em;
+  top: 4px;
+  line-height: 80px;
+  z-index: 1;
+}
+
+.menu > * {
+  font-size: 24px;
+}
+
+.header {
+  position: absolute;
+  top: 46%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+h1 {
+  color: $color-light;
+  font-family: $primaryFont;
+  font-weight: bolder !important;
+  font-size: 46px !important;
+  margin-bottom: 0;
+  text-transform: uppercase !important;
+}
+
+#tagline {
+  width: 640px;
+}
+
+p {
+  color: rgb(95, 95, 95);
+  font-weight: 200;
+  font-family: $primaryFont;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.buttons {
+  position: relative;
+  transform: translateY(56px);
+
+  a {
+    padding: 14px 30px;
+    border: none;
+    color: $color-light;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    font-family: $secondaryFont;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+}
+
+#cta {
+  position: absolute;
+  background: linear-gradient(135deg, rgb(65, 129, 236) 0%, rgb(23, 93, 167) 100%)
+}
+
+.media {
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  right: 6%
+}
+
+.media ul {
+  position: absolute;
+  list-style: none;
+}
+
+.media ul li {
+  padding: 12px 0;
+  display: inline-block !important;
+}
+
+.bottom-text {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  font-size: 18px;
+  font-family: monospace;
+  margin-left: 2em;
+  bottom: 40px;
+}
+
+.copyright {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  font-size: 15px;
+  right: 0;
+  font-family: $primaryFont;
+  font-weight: 100;
+  margin-right: 2em;
+  bottom: 40px;
+}
+
+.loading-screen {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: $color-loading-bg;
+  z-index: 2;
+}
+
+.ring {
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 2;
+  width: 40%;
+  opacity: 0.7;
+}
+
+.ring-one img {
+  animation: rotateFirstRing 2s linear infinite;
+}
+
+.ring-two img {
+  animation: rotateFirstRing 8s linear infinite;
+}
+
+@keyframes rotateFirstRing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media(max-width: 900px) {
+
+  .loading-screen {
+    display: none;
+  }
+  .ring img {
+    display: none;
+  }
+
+  .header p, button, .media, h1 {
+    display: none;
+  }
+
+}
