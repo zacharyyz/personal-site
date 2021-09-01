@@ -191,17 +191,17 @@ export default function Home() {
       <div className="media">
         <ul>
           <li ref={(el) => (media.current[0] = el)}>
-            <a href="https://linkedin.com/avengyy" target="_blank">
+            <a href="https://linkedin.com/in/zachary-zhou/" target="_blank">
               <LinkedIn color="grey" />
             </a>
           </li>
           <li ref={(el) => (media.current[1] = el)}>
-            <a href="https://github.com/avengyy" target="_blank">
+            <a href="https://github.com/ardmcs" target="_blank">
               <Github color="grey" />
             </a>
           </li>
           <li ref={(el) => (media.current[2] = el)}>
-            <a href="https://codepen.com/avengyy" target="_blank">
+            <a href="https://codepen.com/ardmcs" target="_blank">
               <CodePen color="grey" />
             </a>
           </li>
